@@ -1,5 +1,6 @@
 import { loadMainPage } from "./main-page";
 import { loadMenuPage } from "./menu-page";
+import { loadContactPage } from "./contact-page";
 
 console.log('hello');
 const page = document.getElementById('content');
@@ -27,6 +28,10 @@ menuButton.addEventListener('click', () => {
 const contactButton = document.createElement('button');
 contactButton.textContent = 'Contact Us';
 contactButton.classList.add('navButton');
+contactButton.addEventListener('click', () => {
+  contentDiv.textContent = '';
+  loadContactPage(contentDiv);
+});
 
 tabDiv.appendChild(homeButton);
 tabDiv.appendChild(menuButton);
