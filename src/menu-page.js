@@ -13,7 +13,7 @@ function loadMenuPage(page) {
 
   for (let i = 0; i < 5; i++) {
     let menuItem = document.createElement('li');
-    menuItem.textContent = `Menu item ${i+1} ${((i + 1) % 3) * 5}`;
+    menuItem.textContent = `Menu item ${i+1}: ${((i + 1) % 4) * 5 + 2}$`;
     menuItem.classList.add('menuItem');
     menu.appendChild(menuItem);
   }
