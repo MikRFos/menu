@@ -1,6 +1,7 @@
 import { loadMainPage } from "./main-page";
 import { loadMenuPage } from "./menu-page";
 import { loadContactPage } from "./contact-page";
+import './style.css';
 
 console.log('hello');
 const page = document.getElementById('content');
@@ -9,7 +10,7 @@ const tabDiv = document.createElement('div');
 tabDiv.classList.add('tabs');
 
 const contentDiv = document.createElement('div');
-
+contentDiv.classList.add('content');
 
 const homeButton = document.createElement('button');
 homeButton.textContent = 'Home';

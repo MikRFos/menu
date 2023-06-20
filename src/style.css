@@ -1,0 +1,30 @@
+body {
+  background-color: wheat;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs { 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv {
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 70%;
+  padding: 10px;
+  margin: 15px 0;
+
+}

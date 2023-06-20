@@ -2,6 +2,7 @@ function loadMainPage(contentBox) {
   const webTitle = document.createElement('h1');
   webTitle.textContent = 'My Restaurant';
   webTitle.classList.add('title');
+  contentBox.appendChild(webTitle);
 
   const descriptionDiv = document.createElement('div');
   descriptionDiv.classList.add('mainDiv');
@@ -56,6 +57,7 @@ function loadMainPage(contentBox) {
   contentBox.appendChild(hoursDiv);
 
   const locationDiv = document.createElement('div');
+  locationDiv.classList.add('mainDiv');
   const locationTitle = document.createElement('h3');
   locationTitle.textContent = 'Location:';
   locationDiv.appendChild(locationTitle);
